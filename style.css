@@ -1,0 +1,308 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+body#login {
+    background-color: chartreuse;
+}
+
+#index-header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color: #005236;
+    color: white;
+}
+
+h5#nome {
+    margin: auto;
+}
+
+#tools-bar {
+    display: flex;
+    padding: 0.4rem;
+    background-color: #c5c5c5;
+    ;
+}
+
+#consultar-form {
+    display: flex;
+}
+
+#consultar-form input, #consultar-form select {
+    margin: 0 0.25rem;
+}
+
+#todos-btn {
+    margin: 0 auto 0 0.4rem;
+}
+
+#cadastrar-div {
+    background-color: #3a5873;
+    position: absolute;
+    height: 516px;
+    width: 100%;
+    padding: 2rem;
+    display: none;
+}
+
+.show-cadastrar-div {
+    display: flex !important;
+}
+
+label {
+    font-weight: bold;
+}
+
+.excluir-btn {
+    margin-right: 0.3rem;
+}
+
+.Table {
+    /* overflow: hidden; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    font-size: 1rem;
+    margin: 0 1rem 0 0;
+    line-height: 1.5;
+}
+
+/* .Table-header {
+    display: none;
+} */
+
+.Table td, .Table th {
+    border: 1px solid #737373;
+}
+
+tr.Table-row.Table-header {
+    background-color: #37474F;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    .Table-header {
+        font-weight: 700;
+    }
+}
+
+.Table-row {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .Table-row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -moz-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+}
+
+.Table-row-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-flex-basis: 0;
+    -moz-flex-basis: 0;
+    flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    padding: 0.5em;
+    word-break: break-word;
+}
+
+.Table-row .Table-row-item:nth-of-type(1) {
+    flex-grow: 1.5;
+}
+
+.Table-row .Table-row-item:nth-of-type(3) {
+    flex-grow: 0.8;
+}
+
+.Table-row .Table-row-item:nth-of-type(5) {
+    flex-grow: 0.61;
+}
+
+.Table-row .Table-row-item:nth-of-type(6) {
+    flex-grow: 0.61;
+}
+
+.Table-row .Table-row-item:nth-of-type(7) {
+    flex-grow: 1.4;
+}
+
+.Table-row .Table-row-item:nth-of-type(8) {
+    flex-grow: 0.92;
+}
+
+/* .Table-row-item:before {
+    content: attr(data-header);
+    width: 30%;
+    font-weight: 700;
+} */
+
+@media (min-width: 500px) {
+    .Table-row-item {
+        padding: 0.3em;
+    }
+    .Table-row-item:before {
+        content: none;
+    }
+}
+
+.row-collection {
+    height: 200px;
+    overflow: auto;
+    margin-right: -15px;
+}
+
+a.tools-btn:hover {
+    color: #545454;
+    text-decoration: blink;
+}
+
+.Table-row:hover {
+    background-color: #c5cfff;
+}
+
+#confirmar-window {
+    background-color: darkgreen;
+    width: 400px;
+    height: 170px;
+    display: none;
+    position: fixed;
+    border: black solid 3px;
+    padding: 9px;
+    text-align: center;
+}
+
+.show-confirmar-window {
+    display: block !important;
+}
+
+#h4-confirmar {
+    font-size: 1.4rem;
+    color: white;
+}
+
+#confirmar-buttons {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 120px;
+}
+
+a#cancel-btn {
+    margin-left: 20px;
+}
+
+input#sgp-processo {
+    margin-top: 10px;
+}
+
+li {
+    display: inline;
+    padding: 0 0.6em;
+}
+
+/* login */
+
+#form-login {
+    width: 400px;
+    height: 300px;
+    border: black solid 1px;
+    position: fixed;
+    padding: 1rem;
+}
+
+.titulo-login {
+    text-align: center;
+}
+
+h3.titulo-login {
+    font-size: 1.35rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+h2.titulo-login {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: currentColor;
+}
+
+#novo-cadastro {
+    margin-top: 25rem;
+    text-align: center;
+}
+
+[name*=submit-login]{
+    width: 150px;
+}
+
+.form-group.row.editar-div {
+    display: none;
+}
+
+form#cadastrar-form {
+    width: 100%;
+    padding: 1rem;
+    border: black 1px solid;
+}
+
+input#cadastrar-editar-btn {
+    width: inherit;
+}
+
+#cancel-btn {
+    width: inherit;
+}
+
+div#header-login {
+    text-align: center;
+}
+
+img#ief-logo {
+    margin-top: 2rem;
+}
+
+div#form-login-php {
+    text-align: center;
+    padding-top: 5rem;
+}
